@@ -1,0 +1,10 @@
+[project]
+name = "gomoku"
+version = "0.1.0"
+description = "Stable curses-based gomoku for course project stage one"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+gomoku = "gomoku.app:main"
