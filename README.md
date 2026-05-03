@@ -1,6 +1,44 @@
-# 五子棋项目
+# 五子棋
 
-本项目为课程设计第二选题“五子棋博弈”的阶段一实现。程序使用 Python 编写，界面采用标准库 `curses`，重点保证规则正确、交互稳定、结构清晰，并为阶段二搜索算法预留扩展接口。
+本项目为一个简易的五子棋程序，使用 Python 编写，界面采用标准库 `curses`。
+
+## 安装
+
+### 使用 uv
+
+```bash
+uv pip install -e .
+```
+
+安装完成后可直接运行：
+
+```bash
+gomoku
+```
+
+若不想安装，也可直接运行：
+
+```bash
+uv run python -m gomoku
+```
+
+### 使用 pip
+
+```bash
+pip install -e .
+```
+
+安装完成后可直接运行：
+
+```bash
+gomoku
+```
+
+若不想安装，也可直接运行：
+
+```bash
+python3 -m gomoku
+```
 
 ## 运行方式
 
@@ -16,7 +54,7 @@ python3 main.py
 
 运行环境要求：
 
-- Python 3.12 及以上
+- Python 3.11 及以上
 - 支持 UTF-8 的终端
 - 支持 `ncurses` 鼠标事件
 - 终端窗口建议至少为 `92x28`
@@ -45,7 +83,7 @@ python3 main.py
 - 黑棋固定先手
 - 支持边界检测、重复落子检测、连五判定和平局判定
 - 支持人机对战与 AI 对 AI
-- 内置阶段一 baseline AI
+- 内置 baseline AI
 - 支持对局保存与批量导出
 
 ## 数据导出
@@ -60,8 +98,6 @@ data/games/*.json
 
 - `exports/games.jsonl`
 - `exports/moves.csv`
-
-这些文件便于后续实验分析、可视化和阶段二数据整理。
 
 ## 测试
 
