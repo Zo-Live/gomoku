@@ -66,3 +66,7 @@ data/games/*.json
 ```bash
 python3 -m unittest discover -s tests -v
 ```
+
+许可证
+
+MIT
