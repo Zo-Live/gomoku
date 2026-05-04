@@ -2,44 +2,6 @@
 
 本项目为一个简易的五子棋程序，使用 Python 编写，界面采用标准库 `curses`。
 
-## 安装
-
-### 使用 uv
-
-```bash
-uv pip install -e .
-```
-
-安装完成后可直接运行：
-
-```bash
-gomoku
-```
-
-若不想安装，也可直接运行：
-
-```bash
-uv run python -m gomoku
-```
-
-### 使用 pip
-
-```bash
-pip install -e .
-```
-
-安装完成后可直接运行：
-
-```bash
-gomoku
-```
-
-若不想安装，也可直接运行：
-
-```bash
-python3 -m gomoku
-```
-
 ## 运行方式
 
 ```bash
